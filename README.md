@@ -36,5 +36,6 @@ https://github.com/afnansarwar/professional-portfolio
 ## Resources
 index.html contains the html code, css file is in assets foloder along with all the supported images
 
+## Screenshot
 ![screen-shot](https://github.com/afnansarwar/professional-portfolio/assets/12636000/51345ce1-bc5e-4204-a4c5-5ee832922f7f)
-![screen-shot](https://github.com/afnansarwar/professional-portfolio/assets/12636000/a6c04975-cbac-4f10-b2ed-22d8e7fb4fa0)
+
