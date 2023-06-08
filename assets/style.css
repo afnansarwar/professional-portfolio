@@ -1,0 +1,314 @@
+
+/* variables defined to use colors*/
+:root {
+    --textfont: rgb(199, 199, 199);
+    --dark: rgba(16, 27, 69, 1);
+    --background: rgb(103, 101, 101);
+  }
+
+  /* page font and background properties */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--textfont);
+    background-color: var(--background);
+    line-height: 1.5;
+  }
+
+  /* margin set to "0" for all the headings */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  
+  p {
+    margin: 0;
+  }
+
+  /* Page header properties */
+
+  header{
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--dark);
+
+  }
+
+
+  header h1{
+    color: var(--textfont);
+    background-color: var(--dark);
+    padding: 25px 1% 10px 2%;
+    margin: 0;
+    font-size: 4vw;
+    line-height: 1;
+  }
+
+/* Navigation properties */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: var(--textfont);
+    margin-right: 10px;
+    background-image: linear-gradient(270deg, var(--textfont) 0%, var(--textfont) 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    font-size: 1.4rem;
+  }
+  nav a:hover {
+    background-size: 100% 100%;
+    color: var(--dark);
+  }
+  
+.profile-banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    text-align: right;
+    background: var(--background);
+    background-image: url(../assets/banner-background.jpg), linear-gradient(180deg, var(--background), 0%, var(--textfont));
+}
+
+.profile-banner div{
+    flex: 0 0 20%;
+}
+
+.profile-banner h2{
+    display: inline;
+    color: var(--textfont);
+    line-height: 1.5;
+    font-size: 3rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+/* profile pic properties */
+
+.profile-picture img{
+    border-radius: 50%;
+    float: left;
+    margin-left:0px 0px 0px 30px;
+    }
+
+    /* page properties */
+
+    .page-wrapper {
+      max-width: 88%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .page-section {
+      margin: 25px 0;
+      padding: 10px 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: stretch;
+      justify-content: space-between;
+    }
+    
+    /* page section properties */
+
+    .page-section h2 {
+      flex: 0 0 20%;
+      text-align: right;
+      padding-right: 15px;
+      border-right: 4px solid var(--textfont);
+      font-size: 4vw;
+      line-height: 1.1;
+    }
+    
+    .page-section  div {
+      flex: 0 0 77%;
+    }
+    
+    .page-section p {
+      margin-bottom: 20px;
+      font-size: 1.5vw;
+    }
+    
+    /* flex container properties for work section */
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+   
+    /* flex item properties */
+.flex-item {
+  border: 5px solid var(--background);
+  background-color: var(--textfont);
+  color: var(--dark);
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode:overlay;
+  background-size: 100%;
+  transition: all 0.5s;
+  font-size: 1rem;
+}
+
+/* first item in the main work section of bigger size e.g. Refactoring Project */
+.flex-item:first-child {
+  min-height: 350px;
+  flex-basis: 100%;
+}
+
+/* hover properties for flext items in work section */
+
+.flex-item:hover{
+background-color:floralwhite;
+color: rgb(0, 0, 0);
+flex-grow:inherit;
+}
+
+/* background color and padding properties for flext item in work section */
+.flex-item div {
+  background-color: transparent;
+  padding: 10px 10px;
+}
+
+/* h3 heading font size for flex item in work section */
+
+.flex-item h3{
+  font-size: 1.5rem;
+}
+
+/* background images for work section div element */
+
+.refactoring-project{
+  background-image: url(../assets/repo-background.jpg);
+}
+
+.refactoring-repository{
+  background-image: url(../assets/repo-background.jpg);
+}
+
+.portfolio-project{
+  background-image: url(../assets/repo-background.jpg);
+}
+
+.portfolio-repository{
+  background-image: url(../assets/repo-background.jpg);
+}
+
+.password-project{
+  background-image: url(../assets/repo-background.jpg);
+}
+
+.password-respitory{
+  background-image: url(../assets/repo-background.jpg);
+}
+
+/* Contact Me section properties */
+
+.contact address {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+/* background, font and margin properties for address element */
+.contact address a {
+  color: var(--textfont);
+  padding: 5px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-style: normal;
+  background-image: linear-gradient(270deg, var(--textfont) 0%, var(--textfont) 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: bottom;
+  transition: all 0.25s ease-in;
+  margin: 0 0.1rem 0.1rem;
+  display: inline-block;
+}
+
+.contact address a:hover {
+  background-size: 100% 100%;
+  color: var(--dark);
+}
+
+/* different screen sized display properties */
+
+@media screen and (max-width: 980px) {
+  header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header h1 {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 10vw;
+  }
+
+  header nav {
+    justify-content: center;
+  }
+
+  .page-section h2,
+  .page-section div {
+    flex: 0 0 100%;
+  }
+
+  .page-section h2 {
+    border-right: none;
+    border-bottom: 4px solid var(--textfont);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 7vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .flex-item,
+  .flex-item:first-child {
+    flex-basis: 100%;
+  }
+
+  .flex-item:first-child {
+    min-height: 150px;
+  }
+
+  .profile-banner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contact address {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
